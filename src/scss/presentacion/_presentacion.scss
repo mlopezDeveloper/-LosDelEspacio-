@@ -1,0 +1,110 @@
+@use '../base/variables' as v;
+
+.presentacion{
+    place-items: center; 
+    height: 100vh; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #d9d8ff80, #ffffffe6);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__contenedor{
+        place-items: center; 
+    }
+
+    &__heading{
+        font-family: v.$fuenteHeading;
+        font-weight: 700;
+        color: #e0dddd;
+        font-style: normal;
+        font-size: 8vw;
+        margin: 1rem;
+        letter-spacing: 8px;
+        padding-bottom: 20px;
+
+        span {
+            position: relative;
+            display: inline-block;
+            line-height: 1.5;
+
+            &:nth-child(3), &:nth-child(5){
+                padding-left:8px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -4px; /* Ajusta la posición del subrayado */
+                left: 0;
+                width: 100%;
+                height: 50px; /* Grosor del subrayado */
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #e16cdf 120%);
+            }
+
+            &:nth-child(2)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #42aed3 120%);
+            }
+    
+            &:nth-child(3)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #e3f119 120%);
+            }
+    
+            &:nth-child(4)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #ccccc6 120%);
+            }
+    
+            &:nth-child(5)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #09ed3a 120%);
+            }
+    
+            &:nth-child(6)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #f11919 120%);
+            }
+    
+            &:nth-child(7)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #f80492 120%);
+            }
+    
+            &:nth-child(8)::before {
+                background: linear-gradient(to top, rgba(255,255,255,0) 0%, #060606 120%);
+            }
+        }
+    }
+
+    &__galeria{
+        width: 600px;
+        height: 380px;
+        gap: 1rem;
+
+        img{
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            border-radius: 2rem;
+
+            &:hover{
+                cursor: crosshair;
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+    }
+}
+
+.fondo{
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+    overflow: hidden;
+    inset: 0;
+    position: absolute;
+    svg{
+        width: 180%;
+        height: 100vh;
+        left: -40%;
+        position: absolute;
+    }
+}
