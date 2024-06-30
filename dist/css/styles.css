@@ -32,6 +32,23 @@ a {
   text-transform: uppercase;
 }
 
+.p {
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 26px;
+  font-size: 1vw;
+  color: #626262;
+  margin: 1rem 0 0 0;
+}
+
+t .f-weight-600 {
+  font-weight: 600;
+}
+
+.f-weight-700 {
+  font-weight: 700;
+}
+
 .presentacion {
   place-items: center;
   height: 100vh;
@@ -46,7 +63,6 @@ a {
 }
 .presentacion__heading {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 700;
   color: #e0dddd;
   font-style: normal;
   font-size: 8vw;
@@ -171,7 +187,7 @@ a {
 }
 .artistas .artista__datos .hover-underline-animation {
   position: relative;
-  color: black;
+  color: #000;
   padding-bottom: 20px;
 }
 .artistas .artista__datos .hover-underline-animation:after {
@@ -182,21 +198,13 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #000;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 .artistas .artista__datos .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-.artistas .artista__datos p {
-  font-family: "Open Sans";
-  font-weight: 100;
-  line-height: 26px;
-  font-size: 1vw;
-  color: #626262;
-  margin: 1rem 0 0 0;
 }
 .artistas .artista__imagen {
   background-color: antiquewhite;
@@ -410,17 +418,21 @@ a {
 .documental {
   width: 50%;
 }
-.documental__parrafo {
-  font-family: "Open Sans";
-  font-weight: 100;
-  line-height: 26px;
-  font-size: 1vw;
-  color: #626262;
-  margin: 1rem 0 0 0;
-}
 .documental__parrafo span {
   color: blueviolet;
   font-weight: 600;
+}
+
+.footer {
+  background-color: #252525;
+  color: #828282;
+  font-size: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer svg {
+  padding-left: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */

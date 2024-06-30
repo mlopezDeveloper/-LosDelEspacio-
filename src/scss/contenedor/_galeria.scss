@@ -51,17 +51,8 @@
 .documental{
     width: 50%;
 
-    &__parrafo{
-        font-family: v.$fuentePrincipal;
-        font-weight: 100;
-        line-height: 26px;
-        font-size: 1vw;
-        color: #626262;
-        margin: 1rem 0 0 0;
-
-        span{
-            color: blueviolet;
-            font-weight: 600;
-        }
+    &__parrafo span{
+        color: v.$azulvioleta;
+        font-weight: 600;
     }
 }

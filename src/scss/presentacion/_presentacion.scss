@@ -15,7 +15,6 @@
 
     &__heading{
         font-family: v.$fuenteHeading;
-        font-weight: 700;
         color: #e0dddd;
         font-style: normal;
         font-size: 8vw;
@@ -86,7 +85,7 @@
             border-radius: 2rem;
 
             &:hover{
-                cursor: crosshair;
+                cursor: v.$cursor-c;
                 width: 300px;
                 opacity: 1;
                 filter: contrast(120%);

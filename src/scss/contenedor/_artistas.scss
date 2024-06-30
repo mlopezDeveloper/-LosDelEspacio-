@@ -13,7 +13,7 @@
             font-family: v.$fuentePrincipal;
             margin: 0;
             padding: 0;
-            color: #000;
+            color: v.$negro;
             font-size: 2.5vw;
         }
 
@@ -52,7 +52,7 @@
 
             .hover-underline-animation {
                 position: relative;
-                color: black;
+                color: v.$negro;
                 padding-bottom: 20px;
             }
 
@@ -64,7 +64,7 @@
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color: #000000;
+                background-color: v.$negro;
                 transform-origin: bottom right;
                 transition: transform 0.25s ease-out;
             }
@@ -73,19 +73,10 @@
                 transform: scaleX(1);
                 transform-origin: bottom left;
             }
-
-            p {
-                font-family: v.$fuentePrincipal;
-                font-weight: 100;
-                line-height: 26px;
-                font-size: 1vw;
-                color: #626262;
-                margin: 1rem 0 0 0;
-            }
         }
 
         &__imagen {
-            background-color: antiquewhite;
+            background-color: v.$primario;
             box-shadow: 12px 12px 2px 1px rgb(192 192 204 / 20%);
 
             img {
@@ -95,7 +86,7 @@
                 &:hover {
                     filter: grayscale(0);
                     transition: filter 250ms ease-in-out;
-                    cursor: crosshair;
+                    cursor: v.$cursor-c;
                 }
             }
         }
@@ -133,7 +124,7 @@
     padding-top: 1rem;
 
     &__ondas {
-        border: 4px solid #545FE5;
+        border: 4px solid v.$secundario;
         border-radius: 50px;
         width: 200px;
         height: 45px;
@@ -141,25 +132,25 @@
         align-items: center;
         padding: 0;
         margin: 0;
-        cursor: pointer;
+        cursor: v.$cursor-p;
         transition: ease 0.2s;
         position: relative;
-        background: #fff;
+        background: v.$blanco;
         margin-left: 10px;
 
         &:hover>li {
-            background: #fff;
+            background: v.$blanco;
         }
 
         &:hover {
-            background: #545FE5;
+            background: v.$secundario;
         }
     }
     
     &__ondas li {
         list-style: none;
         border-radius: 10px;
-        background: #545FE5;
+        background: v.$secundario;
         margin: 0 6px;
         padding: 0;
     }
@@ -216,21 +207,18 @@
         width: 60px;
         height: 60px;
         font-size: 24px;
-        color: #fff;
-        background-color: #545FE5;
+        color: v.$blanco;
+        background-color: v.$secundario;
         border: none;
         border-radius: 50%;
-        cursor: pointer;
+        cursor: v.$cursor-p;
         transition: background-color 0.3s ease;
         text-decoration: none;
 
         &:hover {
-            background-color: #2034ea;
-        }
-        
-        
+            background-color: v.$terciario;
+        }   
     }
-
 }
 
 .ondas__animation{
