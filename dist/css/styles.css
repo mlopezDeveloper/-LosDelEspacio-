@@ -12,6 +12,10 @@ img {
   aspect-ratio: 16/9;
 }
 
+a {
+  text-decoration: none;
+}
+
 .d-grid {
   display: grid;
 }
@@ -229,7 +233,6 @@ img {
 }
 
 .music {
-  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
@@ -239,7 +242,6 @@ img {
   border-radius: 50px;
   width: 200px;
   height: 45px;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
