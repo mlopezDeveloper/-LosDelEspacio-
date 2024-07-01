@@ -5,6 +5,11 @@
     margin: 0 1rem;
 
     .artista {
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            padding: 0px;
+        }
+
         align-items: center;
         justify-content: space-around;
         padding: 40px 0;
@@ -14,7 +19,8 @@
             margin: 0;
             padding: 0;
             color: v.$negro;
-            font-size: 2.5vw;
+            //font-size: 2.5vw;
+            font-size: clamp(30px, 3vw, 110px);
         }
 
         &__datos {
@@ -32,7 +38,8 @@
             .cta span {
                 padding-bottom: 7px;
                 letter-spacing: 4px;
-                font-size: 1vw;
+                //font-size: 1vw;
+                font-size: clamp(14px, 1vw, 110px);
                 padding-right: 15px;
                 text-transform: uppercase;
             }
@@ -77,6 +84,11 @@
 
         &__imagen {
             background-color: v.$primario;
+
+            @media screen and (max-width: 767px) {
+                box-shadow:none;
+            }
+            
             box-shadow: 12px 12px 2px 1px rgb(192 192 204 / 20%);
 
             img {

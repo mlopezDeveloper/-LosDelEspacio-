@@ -36,7 +36,8 @@ a{
     font-family: v.$fuentePrincipal;
     font-weight: 100;
     line-height: 26px;
-    font-size: 1vw;
+    //font-size: 1vw;
+    font-size: clamp(14px, 1vw, 110px);
     color: #626262;
     margin: 1rem 0 0 0;
 }t

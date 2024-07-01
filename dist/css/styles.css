@@ -36,7 +36,7 @@ a {
   font-family: "Open Sans";
   font-weight: 100;
   line-height: 26px;
-  font-size: 1vw;
+  font-size: clamp(14px, 1vw, 110px);
   color: #626262;
   margin: 1rem 0 0 0;
 }
@@ -65,7 +65,7 @@ t .f-weight-600 {
   font-family: "Bebas Neue", sans-serif;
   color: #e0dddd;
   font-style: normal;
-  font-size: 8vw;
+  font-size: clamp(12px, 9vw, 115px);
   margin: 1rem;
   letter-spacing: 8px;
   padding-bottom: 20px;
@@ -113,6 +113,11 @@ t .f-weight-600 {
   height: 380px;
   gap: 1rem;
 }
+@media screen and (max-width: 767px) {
+  .presentacion__galeria {
+    display: none;
+  }
+}
 .presentacion__galeria img {
   width: 0px;
   flex-grow: 1;
@@ -150,12 +155,18 @@ t .f-weight-600 {
   justify-content: space-around;
   padding: 40px 0;
 }
+@media screen and (max-width: 767px) {
+  .artistas .artista {
+    flex-direction: column;
+    padding: 0px;
+  }
+}
 .artistas .artista__heading {
   font-family: "Open Sans";
   margin: 0;
   padding: 0;
   color: #000;
-  font-size: 2.5vw;
+  font-size: clamp(30px, 3vw, 110px);
 }
 .artistas .artista__datos {
   justify-items: center;
@@ -171,7 +182,7 @@ t .f-weight-600 {
 .artistas .artista__datos .cta span {
   padding-bottom: 7px;
   letter-spacing: 4px;
-  font-size: 1vw;
+  font-size: clamp(14px, 1vw, 110px);
   padding-right: 15px;
   text-transform: uppercase;
 }
@@ -209,6 +220,11 @@ t .f-weight-600 {
 .artistas .artista__imagen {
   background-color: antiquewhite;
   box-shadow: 12px 12px 2px 1px rgba(192, 192, 204, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .artistas .artista__imagen {
+    box-shadow: none;
+  }
 }
 .artistas .artista__imagen img {
   filter: grayscale(1);

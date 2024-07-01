@@ -17,7 +17,8 @@
         font-family: v.$fuenteHeading;
         color: #e0dddd;
         font-style: normal;
-        font-size: 8vw;
+        //font-size: 8vw;
+        font-size: clamp(12px, 9vw, 115px);
         margin: 1rem;
         letter-spacing: 8px;
         padding-bottom: 20px;
@@ -72,6 +73,10 @@
     }
 
     &__galeria{
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
         width: 600px;
         height: 380px;
         gap: 1rem;
