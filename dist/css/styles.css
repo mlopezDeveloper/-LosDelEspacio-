@@ -49,6 +49,10 @@ t .f-weight-600 {
   font-weight: 700;
 }
 
+.width-90 {
+  width: 90%;
+}
+
 .presentacion {
   place-items: center;
   height: 100vh;
