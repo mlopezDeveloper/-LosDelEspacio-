@@ -28,6 +28,26 @@
             padding: 50px;
             width: 100%; //calc(100% - 33%);
 
+            @media screen and (max-width: 767px) {
+                padding: 10px 10px 25px 10px;
+            }
+
+            &:nth-child(2){
+                @media screen and (max-width: 767px) {
+                    order: -1;
+                }
+            }
+
+            p{
+                font-family: v.$fuentePrincipal;
+                font-weight: 100;
+                line-height: 26px;
+                //font-size: 1vw;
+                font-size: clamp(16px, 1vw, 110px);
+                color: #312d2d;//#626262;
+                margin: 1rem 0 0 0;
+            }
+
             .cta {
                 border: none;
                 background: none;
@@ -88,7 +108,7 @@
             @media screen and (max-width: 767px) {
                 box-shadow:none;
             }
-            
+
             box-shadow: 12px 12px 2px 1px rgb(192 192 204 / 20%);
 
             img {
@@ -109,6 +129,16 @@
             justify-content: space-between;
             align-items: center;
             gap: 25px;
+
+            @media screen and (max-width: 767px) {
+                flex-direction: row;
+                width: 80%;
+                padding: 2rem 0 0 0;
+
+                &:last-child{
+                    padding: 2rem 0;
+                }
+            } 
 
             a {
                 display: contents;

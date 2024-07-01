@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-img {
-  aspect-ratio: 16/9;
-}
-
 a {
   text-decoration: none;
 }
@@ -32,16 +28,7 @@ a {
   text-transform: uppercase;
 }
 
-.p {
-  font-family: "Open Sans";
-  font-weight: 100;
-  line-height: 26px;
-  font-size: clamp(16px, 1vw, 110px);
-  color: #312d2d;
-  margin: 1rem 0 0 0;
-}
-
-t .f-weight-600 {
+.f-weight-600 {
   font-weight: 600;
 }
 
@@ -177,6 +164,24 @@ t .f-weight-600 {
   padding: 50px;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .artistas .artista__datos {
+    padding: 10px 10px 25px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .artistas .artista__datos:nth-child(2) {
+    order: -1;
+  }
+}
+.artistas .artista__datos p {
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 26px;
+  font-size: clamp(16px, 1vw, 110px);
+  color: #312d2d;
+  margin: 1rem 0 0 0;
+}
 .artistas .artista__datos .cta {
   border: none;
   background: none;
@@ -245,6 +250,16 @@ t .f-weight-600 {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+}
+@media screen and (max-width: 767px) {
+  .artistas .artista__redes {
+    flex-direction: row;
+    width: 80%;
+    padding: 2rem 0 0 0;
+  }
+  .artistas .artista__redes:last-child {
+    padding: 2rem 0;
+  }
 }
 .artistas .artista__redes a {
   display: contents;
@@ -402,6 +417,12 @@ t .f-weight-600 {
   justify-content: space-around;
   margin: 2rem 1rem;
 }
+@media screen and (max-width: 767px) {
+  .galeria__contenedor-primario {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .galeria__img {
   display: contents;
@@ -434,9 +455,34 @@ t .f-weight-600 {
   margin: 2rem 1rem;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .galeria__contenedor-secundario {
+    flex-direction: column-reverse;
+  }
+}
 
 .documental {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .documental {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .documental__parrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.documental__parrafo p {
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 26px;
+  font-size: clamp(16px, 1vw, 110px);
+  color: #312d2d;
+  margin: 1rem 0 0 0;
 }
 .documental__parrafo span {
   color: blueviolet;
