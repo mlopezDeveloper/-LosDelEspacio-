@@ -254,7 +254,7 @@ a {
 @media screen and (max-width: 767px) {
   .artistas .artista__redes {
     flex-direction: row;
-    width: 80%;
+    width: 65%;
     padding: 2rem 0 0 0;
   }
   .artistas .artista__redes:last-child {

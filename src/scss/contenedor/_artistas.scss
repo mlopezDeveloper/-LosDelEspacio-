@@ -19,14 +19,13 @@
             margin: 0;
             padding: 0;
             color: v.$negro;
-            //font-size: 2.5vw;
             font-size: clamp(30px, 3vw, 110px);
         }
 
         &__datos {
             justify-items: center;
             padding: 50px;
-            width: 100%; //calc(100% - 33%);
+            width: 100%;
 
             @media screen and (max-width: 767px) {
                 padding: 10px 10px 25px 10px;
@@ -132,7 +131,7 @@
 
             @media screen and (max-width: 767px) {
                 flex-direction: row;
-                width: 80%;
+                width: 65%;
                 padding: 2rem 0 0 0;
 
                 &:last-child{
