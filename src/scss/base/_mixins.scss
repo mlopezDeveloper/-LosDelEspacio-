@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media screen and (max-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: v.$tablet) and (max-width: v.$tablet_max) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopxl) {
+        @content;
+    }
+}

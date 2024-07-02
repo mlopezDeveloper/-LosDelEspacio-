@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .presentacion{
     place-items: center; 
@@ -22,8 +23,12 @@
         letter-spacing: 8px;
         padding-bottom: 20px;
 
-        @media screen and (max-width: 767px) {
+        @include m.telefono {
             font-size: 6vw;
+        }
+    
+        @include m.tablet {
+            font-size: 13vw;
         }
 
         span {
@@ -77,13 +82,18 @@
 
     &__galeria{
         
-        @media screen and (max-width: 767px) {
+        @include m.telefono {
             display: none;
         }
+    
+        @include m.tablet {
+            height: 500px;
+        }
 
-        @media screen and (min-width: 1200px) {
+        @include m.desktopXL {
             height: 460px;
         }
+
 
         width: 600px;
         height: 380px;
