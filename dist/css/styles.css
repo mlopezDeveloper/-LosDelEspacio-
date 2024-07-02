@@ -192,7 +192,7 @@ a {
 }
 .artistas .artista__datos {
   justify-items: center;
-  padding: 50px;
+  padding: 30px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
@@ -219,7 +219,7 @@ a {
   font-family: "Open Sans";
   font-weight: 100;
   line-height: 26px;
-  font-size: clamp(16px, 1vw, 15px);
+  font-size: clamp(13px, 1vw, 15px);
   color: #626262;
   margin: 1rem 0 0 0;
 }
@@ -292,6 +292,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  flex: 0 0 20%;
 }
 @media screen and (max-width: 767px) {
   .artistas .artista__redes {
@@ -322,9 +323,9 @@ a {
   filter: grayscale(1);
   transition: filter 250ms ease-in-out;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .artistas .artista__redes svg {
-    width: 10%;
+    width: 16%;
   }
 }
 .artistas .artista__redes svg:hover {
@@ -563,7 +564,7 @@ a {
   font-family: "Open Sans";
   font-weight: 100;
   line-height: 26px;
-  font-size: clamp(16px, 1vw, 15px);
+  font-size: clamp(13px, 1vw, 15px);
   color: #626262;
   margin: 1rem 0 0 0;
 }

@@ -30,7 +30,7 @@
 
         &__datos {
             justify-items: center;
-            padding: 50px;
+            padding: 30px;
             width: 100%;
 
             @include m.telefono {
@@ -55,7 +55,7 @@
                 font-family: v.$fuentePrincipal;
                 font-weight: 100;
                 line-height: 26px;
-                font-size: clamp(16px, 1vw, 15px);
+                font-size: clamp(13px, 1vw, 15px);
                 color: #626262;
                 margin: 1rem 0 0 0;
             }
@@ -141,6 +141,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 25px;
+            flex: 0 0 20%;
 
             @include m.telefono {
                 flex-direction: row;
@@ -172,8 +173,8 @@
                 filter: grayscale(1);
                 transition: filter 250ms ease-in-out;
 
-                @include m.desktopXL {
-                    width: 10%;
+                @media screen and (min-width: 1600px) {
+                    width: 16%;
                 }
 
                 &:hover {
