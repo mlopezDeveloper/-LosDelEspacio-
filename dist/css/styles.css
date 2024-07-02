@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Helvetica&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -179,7 +178,7 @@ a {
   font-weight: 100;
   line-height: 26px;
   font-size: clamp(16px, 1vw, 110px);
-  color: #312d2d;
+  color: #626262;
   margin: 1rem 0 0 0;
 }
 .artistas .artista__datos .cta {
