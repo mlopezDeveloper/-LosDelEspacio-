@@ -156,7 +156,7 @@ a {
   margin: 0;
   padding: 0;
   color: #000;
-  font-size: clamp(30px, 3vw, 110px);
+  font-size: clamp(30px, 3vw, 36px);
 }
 .artistas .artista__datos {
   justify-items: center;
@@ -177,7 +177,7 @@ a {
   font-family: "Open Sans";
   font-weight: 100;
   line-height: 26px;
-  font-size: clamp(16px, 1vw, 110px);
+  font-size: clamp(16px, 1vw, 15px);
   color: #626262;
   margin: 1rem 0 0 0;
 }
@@ -188,9 +188,10 @@ a {
   margin-top: 1rem;
 }
 .artistas .artista__datos .cta span {
+  font-family: "Open Sans";
   padding-bottom: 7px;
   letter-spacing: 4px;
-  font-size: clamp(14px, 1vw, 110px);
+  font-size: clamp(16px, 1vw, 15px);
   padding-right: 15px;
   text-transform: uppercase;
 }
@@ -268,6 +269,11 @@ a {
   height: auto;
   filter: grayscale(1);
   transition: filter 250ms ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .artistas .artista__redes svg {
+    width: 12%;
+  }
 }
 .artistas .artista__redes svg:hover {
   filter: grayscale(0);
