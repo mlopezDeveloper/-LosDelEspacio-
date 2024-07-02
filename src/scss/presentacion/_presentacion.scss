@@ -81,7 +81,10 @@
     }
 
     &__galeria{
-        
+        width: 600px;
+        height: 360px;
+        gap: 1rem;
+
         @include m.telefono {
             display: none;
         }
@@ -90,14 +93,13 @@
             height: 500px;
         }
 
-        @include m.desktopXL {
-            height: 460px;
+        @media screen and (max-width: 1500px) {
+            height: 360px;
         }
 
-
-        width: 600px;
-        height: 380px;
-        gap: 1rem;
+        @media screen and (min-width: 1600px) {
+            height: 560px;
+        }
 
         img{
             width: 0px;
