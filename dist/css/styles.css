@@ -60,6 +60,11 @@ a {
   letter-spacing: 8px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .presentacion__heading {
+    font-size: 6vw;
+  }
+}
 .presentacion__heading span {
   position: relative;
   display: inline-block;
@@ -277,7 +282,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .artistas .artista__redes svg {
-    width: 12%;
+    width: 10%;
   }
 }
 .artistas .artista__redes svg:hover {
@@ -422,7 +427,7 @@ a {
   margin: 0;
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: clamp(15px, 1vw, 20px);
+  font-size: clamp(14px, 1vw, 15px);
 }
 
 .galeria__contenedor-primario {
@@ -493,8 +498,8 @@ a {
   font-family: "Open Sans";
   font-weight: 100;
   line-height: 26px;
-  font-size: clamp(16px, 1vw, 110px);
-  color: #312d2d;
+  font-size: clamp(16px, 1vw, 15px);
+  color: #626262;
   margin: 1rem 0 0 0;
 }
 .documental__parrafo span {

@@ -9,7 +9,7 @@
         margin: 0;
         font-family: v.$fuentePrincipal;
         font-weight: 600;
-        font-size: clamp(15px, 1vw, 20px);
+        font-size: clamp(14px, 1vw, 15px);
     }
 }
 
@@ -78,9 +78,8 @@
             font-family: v.$fuentePrincipal;
             font-weight: 100;
             line-height: 26px;
-            //font-size: 1vw;
-            font-size: clamp(16px, 1vw, 110px);
-            color: #312d2d;//#626262;
+            font-size: clamp(16px, 1vw, 15px);
+            color: #626262;
             margin: 1rem 0 0 0;
         }
 
