@@ -7,6 +7,9 @@
 
     p{
         margin: 0;
+        font-family: v.$fuentePrincipal;
+        font-weight: 600;
+        font-size: clamp(15px, 1vw, 20px);
     }
 }
 

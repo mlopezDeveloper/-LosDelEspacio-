@@ -1,7 +1,10 @@
+@use '../base/variables' as v;
+
 .footer{
     background-color: #252525;
     color: #828282;
-    font-size: 10px;
+    font-size: clamp(10px, 1vw, 10px);
+    font-family: v.$fuentePrincipal;
     padding: 10px;
     display: flex;
     align-items: center;

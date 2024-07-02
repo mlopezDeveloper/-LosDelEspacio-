@@ -108,6 +108,11 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .presentacion__galeria {
+    height: 460px;
+  }
+}
 .presentacion__galeria img {
   width: 0px;
   flex-grow: 1;
@@ -415,6 +420,9 @@ a {
 }
 .galeria__barra p {
   margin: 0;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: clamp(15px, 1vw, 20px);
 }
 
 .galeria__contenedor-primario {
@@ -497,7 +505,8 @@ a {
 .footer {
   background-color: #252525;
   color: #828282;
-  font-size: 10px;
+  font-size: clamp(10px, 1vw, 10px);
+  font-family: "Open Sans";
   padding: 10px;
   display: flex;
   align-items: center;

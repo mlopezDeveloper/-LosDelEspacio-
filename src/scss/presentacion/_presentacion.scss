@@ -73,8 +73,13 @@
     }
 
     &__galeria{
+        
         @media screen and (max-width: 767px) {
             display: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            height: 460px;
         }
 
         width: 600px;
