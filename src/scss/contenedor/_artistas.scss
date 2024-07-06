@@ -56,14 +56,14 @@
                 font-weight: 100;
                 line-height: 26px;
                 font-size: clamp(13px, 1vw, 15px);
-                color: #626262;
+                color: v.$gris;
                 margin: 1rem 0 0 0;
             }
 
             .cta {
                 border: none;
                 background: none;
-                cursor: pointer;
+                cursor: v.$cursor-p;
                 margin-top: 1rem;
             }
 
@@ -73,7 +73,7 @@
                 letter-spacing: 4px;
                 font-size: clamp(16px, 1vw, 15px);
                 padding-right: 15px;
-                text-transform: uppercase;
+                //text-transform: uppercase;
             }
 
             .cta svg {
@@ -200,12 +200,11 @@
         justify-content: center;
         align-items: center;
         padding: 0;
-        margin: 0;
         cursor: v.$cursor-p;
         transition: ease 0.2s;
         position: relative;
         background: v.$blanco;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
 
         &:hover>li {
             background: v.$blanco;
@@ -216,13 +215,13 @@
         }
     }
     
-    &__ondas li {
-        list-style: none;
-        border-radius: 10px;
-        background: v.$secundario;
-        margin: 0 6px;
-        padding: 0;
-    }
+    // &__ondas li {
+    //     list-style: none;
+    //     border-radius: 10px;
+    //     background: v.$secundario;
+    //     margin: 0 6px;
+    //     padding: 0;
+    // }
 
     &__tamaño{
         height: 11px;
@@ -230,6 +229,12 @@
     }
 
     &__ondas li{
+
+        list-style: none;
+        border-radius: 10px;
+        background: v.$secundario;
+        margin: 0 6px;
+        padding: 0;
         
         &:nth-child(2) {
             animation-name: onda2;

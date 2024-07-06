@@ -84,13 +84,13 @@
     &__parrafo{
 
         @include m.telefono {
-            display: flex;
+            // display: flex;
             flex-direction: column;
             align-items: center;
         }
     
         @include m.tablet {
-            display: flex;
+            // display: flex;
             flex-direction: column;
             align-items: center;
         }
@@ -100,7 +100,7 @@
             font-weight: 100;
             line-height: 26px;
             font-size: clamp(13px, 1vw, 15px);
-            color: #626262;
+            color: v.$gris;
             margin: 1rem 0 0 0;
         }
 

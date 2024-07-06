@@ -39,18 +39,18 @@ a {
   width: 90%;
 }
 
+.p-i-center {
+  place-items: center;
+}
+
 /** Media Queries **/
 .presentacion {
-  place-items: center;
   height: 100vh;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(217, 216, 255, 0.5019607843), rgba(255, 255, 255, 0.9019607843));
   background-repeat: no-repeat;
   background-size: cover;
-}
-.presentacion__contenedor {
-  place-items: center;
 }
 .presentacion__heading {
   font-family: "Bebas Neue", sans-serif;
@@ -235,7 +235,6 @@ a {
   letter-spacing: 4px;
   font-size: clamp(16px, 1vw, 15px);
   padding-right: 15px;
-  text-transform: uppercase;
 }
 .artistas .artista__datos .cta svg {
   transform: translateX(-8px);
@@ -346,12 +345,11 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
   cursor: pointer;
   transition: ease 0.2s;
   position: relative;
   background: #fff;
-  margin-left: 10px;
+  margin: 0 0 0 10px;
 }
 .music__ondas:hover > li {
   background: #fff;
@@ -359,16 +357,16 @@ a {
 .music__ondas:hover {
   background: #545FE5;
 }
+.music__tamaño {
+  height: 11px;
+  width: 6px;
+}
 .music__ondas li {
   list-style: none;
   border-radius: 10px;
   background: #545FE5;
   margin: 0 6px;
   padding: 0;
-}
-.music__tamaño {
-  height: 11px;
-  width: 6px;
 }
 .music__ondas li:nth-child(2) {
   animation-name: onda2;
@@ -548,14 +546,12 @@ a {
 }
 @media screen and (max-width: 767px) {
   .documental__parrafo {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .documental__parrafo {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -579,7 +575,6 @@ a {
   font-size: clamp(10px, 1vw, 10px);
   font-family: "Open Sans";
   padding: 10px;
-  display: flex;
   align-items: center;
 }
 .footer svg {
