@@ -30,12 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isPlaying = !isPlaying;
         });
     }
-
-    setupPlayButton('playButton_1', 'music__audio-1', 'ondas_1');
-    setupPlayButton('playButton_2', 'music__audio-2', 'ondas_2');
-    setupPlayButton('playButton_3', 'music__audio-3', 'ondas_3');
-    setupPlayButton('playButton_4', 'music__audio-4', 'ondas_4');
-    setupPlayButton('playButton_5', 'music__audio-5', 'ondas_5');
-    setupPlayButton('playButton_6', 'music__audio-6', 'ondas_6');
-    setupPlayButton('playButton_7', 'music__audio-7', 'ondas_7');
+    for (let i = 1; i <= 7; i++) {
+        setupPlayButton(`playButton_${i}`, `music__audio-${i}`, `ondas_${i}`);
+    }
 });

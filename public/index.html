@@ -13,7 +13,10 @@
     <meta property="og:image" content="/src/img/cantantes.jfif" >
     <meta property="og:image:alt" content="Una fotografia de Los del espacio" >
 
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- <link rel="stylesheet" href="dist/css/styles.css "> -->
+    <link rel="stylesheet" href="dist/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="dist/css/styles.css"></noscript>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -50,14 +53,14 @@
                 </h1>
             </div>
             <div class="presentacion__galeria d-flex">
-                <img src="../src/img/bigone.avif" width="auto" height="auto" alt="foto de bigone">
-                <img src="../src/img/duki.avif" width="auto" height="auto" alt="foto de duki">
-                <img src="../src/img/emilia.avif" width="auto" height="auto" alt="foto de emilia">
-                <img src="../src/img/litkillah.avif" width="auto" height="auto" alt="foto de litkillah">
-                <img src="../src/img/thiago.avif" width="auto" height="auto" alt="foto de thiago pzk">
-                <img src="../src/img/FMK.avif" width="auto" height="auto" alt="foto de fmk">
-                <img src="../src/img/Rusherking.avif" width="auto" height="auto" alt="foto de Rusherking">
-                <img src="../src/img/maria.avif" width="auto" height="auto" alt="foto de maria becerra">
+                <img src="../src/img/bigone.avif" width="100%" height="100%" loading="lazy" alt="foto de bigone">
+                <img src="../src/img/duki.avif" width="100%" height="100%" loading="lazy" alt="foto de duki">
+                <img src="../src/img/emilia.avif" width="100%" height="100%" loading="lazy" alt="foto de emilia">
+                <img src="../src/img/litkillah.avif" width="100%" height="100%" loading="lazy" alt="foto de litkillah">
+                <img src="../src/img/thiago.avif" width="100%" height="100%" loading="lazy" alt="foto de thiago pzk">
+                <img src="../src/img/FMK.avif" width="100%" height="100%" loading="lazy" alt="foto de fmk">
+                <img src="../src/img/Rusherking.avif" width="100%" height="100%" loading="lazy" alt="foto de Rusherking">
+                <img src="../src/img/maria.avif" width="100%" height="100%" loading="lazy" alt="foto de maria becerra">
             </div>
         </div>
     </section>
@@ -94,6 +97,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_1">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-1" src="/src/audio/neon.mp3"></audio>
@@ -110,7 +114,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/lit.avif" width="auto" height="auto" alt="foto de litkillah">
+                <img src="../src/img/lit.avif" width="auto" height="auto" loading="lazy" alt="foto de litkillah">
             </div>
             <div class="artista__redes d-flex">
                 <a href="https://open.spotify.com/intl-es/artist/53TMKUHE09Ym7BBkgsIBO6" target="_blank" rel="noreferrer"><svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128 70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007 7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276 3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289-34.406-21.148-86.853-27.273-127.548-14.92-5.278 1.594-10.852-1.38-12.454-6.649-1.59-5.278 1.386-10.842 6.655-12.446 46.485-14.106 104.275-7.273 143.787 17.007 4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z" fill="#1ED760"/></svg></a>
@@ -124,6 +128,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_2">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-2" src="/src/audio/gatas.mp3"></audio>
@@ -140,7 +145,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/FMK_avif.avif" width="auto" height="auto" alt="foto de fmk">
+                <img src="../src/img/FMK_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de fmk">
             </div>
             <div class="artista__datos d-grid">
                 <h2 class="artista__heading uppercase">FMK</h2>
@@ -198,6 +203,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_3">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-3" src="/src/audio/La_Playlist.mpeg.mp3"></audio>
@@ -214,7 +220,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/emilia_avif.avif" width="auto" height="auto" alt="foto de emilia mernes">
+                <img src="../src/img/emilia_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de emilia mernes">
             </div>
             <div class="artista__redes d-flex">
                 <a href="https://open.spotify.com/intl-es/artist/0AqlFI0tz2DsEoJlKSIiT9?autoplay=true" target="_blank" rel="noreferrer"><svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128 70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007 7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276 3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289-34.406-21.148-86.853-27.273-127.548-14.92-5.278 1.594-10.852-1.38-12.454-6.649-1.59-5.278 1.386-10.842 6.655-12.446 46.485-14.106 104.275-7.273 143.787 17.007 4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z" fill="#1ED760"/></svg></a>
@@ -227,6 +233,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_4">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-4" src="/src/audio/GIVENCHY.mp3"></audio>
@@ -243,7 +250,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/duki_avif.avif" width="auto" height="auto" alt="foto de duki">
+                <img src="../src/img/duki_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de duki">
             </div>
             <div class="artista__datos d-grid">
                 <h2 class="artista__heading uppercase">DUKI</h2>
@@ -302,6 +309,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_5">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-5" src="/src/audio/Olvidate.mp3"></audio>
@@ -318,7 +326,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/rusher.avif" width="auto" height="auto" alt="foto de Rusherking">
+                <img src="../src/img/rusher.avif" width="auto" height="auto" loading="lazy" alt="foto de Rusherking">
             </div>
             <div class="artista__redes d-flex">
                 <a href="https://open.spotify.com/intl-es/artist/3Apb2lGmGJaBmr0TTBJvIZ?autoplay=true" target="_blank" rel="noreferrer"><svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128 70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007 7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276 3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289-34.406-21.148-86.853-27.273-127.548-14.92-5.278 1.594-10.852-1.38-12.454-6.649-1.59-5.278 1.386-10.842 6.655-12.446 46.485-14.106 104.275-7.273 143.787 17.007 4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z" fill="#1ED760"/></svg></a>
@@ -331,6 +339,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_6">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-6" src="/src/audio/Iman.mp3"></audio>
@@ -347,7 +356,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/maria_avif.avif" width="auto" height="auto" alt="foto de maria becerra">
+                <img src="../src/img/maria_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de maria becerra">
             </div>
             <div class="artista__datos d-grid">
                 <h2 class="artista__heading uppercase">Maria Becerra</h2>
@@ -408,6 +417,7 @@
             <div class="artista__imagen">
                 <div class="music d-flex">
                     <button class="music__btn" id="playButton_7">
+                        music
                         <i class="fas fa-play"></i>
                     </button>
                     <audio id="music__audio-7" src="/src/audio/slow.mp3"></audio>
@@ -424,7 +434,7 @@
                         <li class="music__tamaño"></li>
                     </ul>
                 </div>
-                <img src="../src/img/thiago_avif.avif" width="auto" height="auto" alt="foto de tiago pzk">
+                <img src="../src/img/thiago_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de tiago pzk">
             </div>
             <div class="artista__redes d-flex">
                 <a href="https://open.spotify.com/intl-es/artist/5Y3MV9DZ0d87NnVm56qSY1?autoplay=true" target="_blank" rel="noreferrer"><svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128 70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007 7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276 3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289-34.406-21.148-86.853-27.273-127.548-14.92-5.278 1.594-10.852-1.38-12.454-6.649-1.59-5.278 1.386-10.842 6.655-12.446 46.485-14.106 104.275-7.273 143.787 17.007 4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z" fill="#1ED760"/></svg></a>
@@ -435,7 +445,7 @@
         </div>
         <div class="artista d-flex">
             <div class="artista__imagen">
-                <img src="../src/img/bigone_avif.avif" width="auto" height="auto" alt="foto de big one">
+                <img src="../src/img/bigone_avif.avif" width="auto" height="auto" loading="lazy" alt="foto de big one">
             </div>
             <div class="artista__datos d-grid">
                 <h2 class="artista__heading uppercase">Big One</h2>
@@ -470,7 +480,7 @@
         <div class="galeria__barra"><p class="t-center">Actualmente, “Los del espacio” posee 307.000.000 de visualizaciones en YouTube y más de 365.000.000 en Spotify.</p></div>
         <div class="galeria__contenedor-primario d-flex">
             <div class="galeria__img">
-                <img src="/src/img/cantantes.avif" width="auto" height="auto" alt="foto de big one">
+                <img src="/src/img/cantantes.avif" width="auto" height="auto" loading="lazy" alt="foto de big one">
             </div>
             <div class="galeria__video d-flex">
                 <video controls>
@@ -488,7 +498,7 @@
                 </video>
             </div>
             <div class="documental">
-                <div class="documental__parrafo d-flex">
+                <div class="documental__parrafo">
                     <p class="t-center width-90">
                         En esta oportunidad, este colectivo de artistas revela la intimidad que
                         hubo detrás de la creación de ese tema presentando 

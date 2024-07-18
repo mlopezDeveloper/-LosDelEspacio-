@@ -404,7 +404,7 @@ a {
   justify-content: center;
   width: 60px;
   height: 60px;
-  font-size: 24px;
+  font-size: 0;
   color: #fff;
   background-color: #545FE5;
   border: none;
@@ -413,6 +413,10 @@ a {
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
+.music__btn i{
+  font-size: 24px;
+}
+
 .music__btn:hover {
   background-color: #2034ea;
 }
@@ -571,7 +575,7 @@ a {
 
 .footer {
   background-color: #252525;
-  color: #828282;
+  color: #ffffff;
   font-size: clamp(10px, 1vw, 10px);
   font-family: "Open Sans";
   padding: 10px;
