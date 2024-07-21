@@ -116,16 +116,20 @@
 
         &__imagen {
             background-color: v.$primario;
+            box-shadow: 12px 12px 2px 1px rgb(192 192 204 / 20%);
+            width: 100%;//505px;
+            text-align: center;
 
             @include m.telefono {
                 box-shadow:none;
             }
 
-            box-shadow: 12px 12px 2px 1px rgb(192 192 204 / 20%);
-
             img {
                 filter: grayscale(1);
                 transition: filter 250ms ease-in-out;
+                max-width: 100%;
+                // max-width: 505px;
+                // max-height: 494px;
 
                 &:hover {
                     filter: grayscale(0);
@@ -183,7 +187,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -214,14 +217,6 @@
             background: v.$secundario;
         }
     }
-    
-    // &__ondas li {
-    //     list-style: none;
-    //     border-radius: 10px;
-    //     background: v.$secundario;
-    //     margin: 0 6px;
-    //     padding: 0;
-    // }
 
     &__tamaño{
         height: 11px;
@@ -280,7 +275,7 @@
         justify-content: center;
         width: 60px;
         height: 60px;
-        font-size: 24px;
+        font-size: 0;
         color: v.$blanco;
         background-color: v.$secundario;
         border: none;
@@ -288,6 +283,10 @@
         cursor: v.$cursor-p;
         transition: background-color 0.3s ease;
         text-decoration: none;
+
+        i{
+            font-size: 24px;
+        }
 
         &:hover {
             background-color: v.$terciario;

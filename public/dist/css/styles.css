@@ -270,6 +270,8 @@ a {
 .artistas .artista__imagen {
   background-color: antiquewhite;
   box-shadow: 12px 12px 2px 1px rgba(192, 192, 204, 0.2);
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .artistas .artista__imagen {
@@ -279,6 +281,7 @@ a {
 .artistas .artista__imagen img {
   filter: grayscale(1);
   transition: filter 250ms ease-in-out;
+  max-width: 100%;
 }
 .artistas .artista__imagen img:hover {
   filter: grayscale(0);
@@ -413,10 +416,9 @@ a {
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
-.music__btn i{
+.music__btn i {
   font-size: 24px;
 }
-
 .music__btn:hover {
   background-color: #2034ea;
 }
@@ -476,6 +478,7 @@ a {
 }
 
 .galeria__contenedor-primario {
+  display: flex;
   gap: 20px;
   justify-content: space-around;
   margin: 2rem 1rem;
@@ -491,31 +494,6 @@ a {
     flex-direction: column;
     align-items: center;
   }
-}
-
-.galeria__img {
-  display: contents;
-}
-
-.galeria__img img {
-  width: 100%;
-  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.galeria__video {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.galeria__video video {
-  width: 100%;
-  max-width: 650px; /* Ajusta el tamaño máximo de los videos */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .galeria__contenedor-secundario {
@@ -526,15 +504,72 @@ a {
 }
 @media screen and (max-width: 767px) {
   .galeria__contenedor-secundario {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .galeria__contenedor-secundario {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
+.galeria__img {
+  display: flex; /* Use flexbox instead of contents */
+  justify-content: center; /* Center the image within its container */
+  align-items: center; /* Align the image within its container */
+  width: 100%; /* Make the container full width */
+  max-width: 300px; /* Set a maximum width */
+}
+
+.galeria__img img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image fills its container */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria__video {
+  display: flex; /* Ensure the flex properties apply */
+  justify-content: center;
+  width: 100%;
+  max-width: 650px; /* Set a maximum width for the video container */
+  position: relative; /* Necessary for iframe padding trick */
+  padding-bottom: 27.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .galeria__video {
+    padding-bottom: 56.25%; /* Aspect ratio for mobile devices (16:9) */
+  }
+}
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .galeria__video {
+    padding-bottom: 56.25%; /* Aspect ratio for tablets (16:9) */
+  }
+}
+.galeria__video iframe {
+  position: absolute; /* Necessary for iframe padding trick */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional media query for larger screens */
+@media screen and (min-width: 1024px) {
+  .galeria__contenedor-primario {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .documental {
   width: 50%;
 }
