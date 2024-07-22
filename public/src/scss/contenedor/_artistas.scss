@@ -127,9 +127,9 @@
             img {
                 filter: grayscale(1);
                 transition: filter 250ms ease-in-out;
-                max-width: 100%;
-                // max-width: 505px;
-                // max-height: 494px;
+                //max-width: 100%;
+                width: 100%;
+                height: auto;
 
                 &:hover {
                     filter: grayscale(0);

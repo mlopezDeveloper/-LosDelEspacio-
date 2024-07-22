@@ -281,7 +281,8 @@ a {
 .artistas .artista__imagen img {
   filter: grayscale(1);
   transition: filter 250ms ease-in-out;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 .artistas .artista__imagen img:hover {
   filter: grayscale(0);
