@@ -270,8 +270,9 @@ a {
 .artistas .artista__imagen {
   background-color: antiquewhite;
   box-shadow: 12px 12px 2px 1px rgba(192, 192, 204, 0.2);
-  width: 100%;
+  max-width: 100%;
   text-align: center;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .artistas .artista__imagen {
@@ -281,8 +282,9 @@ a {
 .artistas .artista__imagen img {
   filter: grayscale(1);
   transition: filter 250ms ease-in-out;
-  width: 100%;
-  height: auto;
+  width: 73%;
+  max-width: 100%; /* Asegura que la imagen no sea más grande que su tamaño original */
+  height: auto; /* Mantén la proporción original de la imagen */
 }
 .artistas .artista__imagen img:hover {
   filter: grayscale(0);
