@@ -19,7 +19,7 @@
 2. Clona ese repositorio en tu máquina local.
 
     ```bash 
-    git clone https://github.com/<USERNAME>/adeviento-web.git
+    git clone https://github.com/mlopezDeveloper/-LosDelEspacio-.git
     ```
 3. Inicializa el proyecto de Sass.
 
