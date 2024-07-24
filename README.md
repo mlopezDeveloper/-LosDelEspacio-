@@ -21,7 +21,7 @@
     ```bash 
     git clone https://github.com/mlopezDeveloper/-LosDelEspacio-.git
     ```
-3. Inicializa el proyecto de Sass.
+3. Inicializa el proyecto.
 
     ```bash
     node server.js
